@@ -33,7 +33,7 @@ loop do
   option = gets.chomp.to_i # Recebe a entrada como inteiro
   system("cls") # Limpa o terminal
 
-  unless option > 0 and option < 6
+  if !(option > 0 and option < 6)
     puts "Invalid Input!"
   elsif option == 5
     puts "Bye, bye!"
